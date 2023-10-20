@@ -1,0 +1,17 @@
+{
+  "hug_name": "ckiplab/gpt2-base-chinese",
+  "hidden_size": 768,
+  "encoder_layer_number": 12,
+  "encoder_dropout_rate": 0.2,
+  "encoder_input_dropout_rate": 0.1,
+  "decoder_layer_number": 2,
+  "decoder_dropout_rate": 0.1,
+  "decoder_input_dropout_rate": 0.2,
+  "embedding_size": 768,
+  "punc_id": 21130,
+  "num_id": 21128,
+  "eos_id": 102,
+  "eng_id": 21129,
+  "max_segment_length": 4,
+  "vocab_size": 21131
+}

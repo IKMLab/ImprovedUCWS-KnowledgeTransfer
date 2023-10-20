@@ -1,0 +1,4 @@
+# Requirements for Existing Chinese Word Segmentation Tools.
+snownlp==0.12.3
+hanlp==2.1.0b45
+jieba==0.42.1

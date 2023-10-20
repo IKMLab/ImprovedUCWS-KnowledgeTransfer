@@ -1,0 +1,10 @@
+# torch==1.10.1
+# tqdm==4.62.3
+# numpy==1.22.0
+# transformers==4.15.0
+torch==1.13.0+cu117
+tqdm==4.65.0
+numpy==1.24.3
+transformers==4.30.2
+six==1.16.0
+tensorboard==2.13.0
