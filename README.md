@@ -3,6 +3,8 @@ This is the official implementation of the paper "[Improved Unsupervised Chinese
 
 ![image](./image/framework.png)
 
+> 🌐 **Users in Mainland China / 中國使用者**: If you cannot reach HuggingFace directly, please use a mirror — see [HuggingFace Mirror](#huggingface-mirror-users-in-mainland-china) / [HuggingFace 鏡像站](#huggingface-鏡像站中國大陸使用者).
+
 ## Introduction
 - We focus on the unsupervised Chinese word segmentaion (UCWS), which do need to any human annotation data.
 - Our model consists of two modules, the segment model and the pre-trained classifier:
@@ -28,6 +30,20 @@ bash install.sh
 ```
 -  Once the installation is complete, the virtual environment will be set up, and all the required dependencies and dataset will be installed.
 - The Chinese word segmentation benchmark dataset is included in this project, which consists of 8 benchmark datasets for Chinese word segmentation, along with the evaluation script.
+
+## HuggingFace Mirror (Users in Mainland China)
+The classifier downloads the [`bert-base-chinese`](https://huggingface.co/bert-base-chinese) model from HuggingFace. If you cannot reach HuggingFace directly (e.g., in Mainland China), set the `HF_ENDPOINT` environment variable to a mirror **before** running any command:
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+```
+This environment variable is read when `transformers`/`huggingface_hub` is imported, so exporting it in your shell before launching the scripts makes it apply to the whole project without modifying any source code.
+
+## HuggingFace 鏡像站 (中國使用者)
+本 repo 代碼會從 HuggingFace 下載 [`bert-base-chinese`](https://huggingface.co/bert-base-chinese) 模型。如果你無法直接連線 HuggingFace (例如在中國)，請在執行任何指令**之前**，先把 `HF_ENDPOINT` 環境變數設為鏡像站:
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+```
+這個環境變數會在 `transformers`/`huggingface_hub` 被 import 時讀取，因此只要在啟動腳本前於 shell 設定好，就能套用到整個專案，而不需要修改任何原始程式碼。
 
 ## First stage: Train the segment model
 - Train the segment model on the raw corpus without any manual annotation.
