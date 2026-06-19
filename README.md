@@ -1,5 +1,5 @@
 # Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer
-This repository contains the implementation of a method for improving unsupervised Chinese word segmentation using pre-trained knowledge and pseudo-labeling transfer.
+This is the official implementation of the paper "[Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer" (EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.564/)".
 
 ![image](./image/framework.png)
 
@@ -65,3 +65,29 @@ We recommend using Linux or WSL2 for reproduction.
 The evaluation script relies on the official CWS Perl scoring script (`score.pl`).
 Native Windows execution may require additional Perl configuration and can cause encoding or path-related issues.
 We currently do not officially support native Windows execution.
+
+
+## Cite our paper
+If you find our work useful in your research, please consider citing our paper:
+```
+@inproceedings{li-etal-2023-improved,
+    title = "Improved Unsupervised {C}hinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer",
+    author = "Li, Hsiu-Wen  and
+      Lin, Ying-Jia  and
+      Li, Yi-Ting  and
+      Lin, Chun  and
+      Kao, Hung-Yu",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.564/",
+    doi = "10.18653/v1/2023.emnlp-main.564",
+    pages = "9109--9118",
+    abstract = "Unsupervised Chinese word segmentation (UCWS) has made progress by incorporating linguistic knowledge from pre-trained language models using parameter-free probing techniques. However, such approaches suffer from increased training time due to the need for multiple inferences using a pre-trained language model to perform word segmentation. This work introduces a novel way to enhance UCWS performance while maintaining training efficiency. Our proposed method integrates the segmentation signal from the unsupervised segmental language model to the pre-trained BERT classifier under a pseudo-labeling framework. Experimental results demonstrate that our approach achieves state-of-the-art performance on the eight UCWS tasks while considerably reducing the training time compared to previous approaches."
+}
+```
