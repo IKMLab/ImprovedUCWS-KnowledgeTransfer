@@ -1,5 +1,5 @@
 # Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer
-This is the official implementation of the paper "[Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer" (EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.564/)".
+This is the official implementation of the paper "[Improved Unsupervised Chinese Word Segmentation Using Pre-trained Knowledge and Pseudo-labeling Transfer" (EMNLP 2023)](https://aclanthology.org/2023.emnlp-main.564/).
 
 ![image](./image/framework.png)
 
