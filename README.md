@@ -21,7 +21,7 @@ This repository contains the implementation of a method for improving unsupervis
 ## Installation
 ```bash
 # Clone this project.
-git clone https://github.com/IKMLab/CWS.git
+git clone git@github.com:IKMLab/ImprovedUCWS-KnowledgeTransfer.git
 
 # Install the dataset and the necessary dependencies. & Create the virtual environment.
 bash install.sh
@@ -44,7 +44,7 @@ bash scripts/first_stage.sh as 0
     - Determine the GPU device being employed.
 - The classifeir is based on the [BERT](https://huggingface.co/bert-base-chinese).
 ```bash
-bash scrips/second_stage.sh as 0
+bash scripts/second_stage.sh as 0
 ```
 
 ## Read the scores
@@ -56,3 +56,12 @@ python read_score.py --exp_path exp/second_stage
 ```
 tensorboard --logdir exp/second_stage
 ```
+
+## Platform Notes
+
+This repository was developed and tested primarily on Linux.
+We recommend using Linux or WSL2 for reproduction.
+
+The evaluation script relies on the official CWS Perl scoring script (`score.pl`).
+Native Windows execution may require additional Perl configuration and can cause encoding or path-related issues.
+We currently do not officially support native Windows execution.
